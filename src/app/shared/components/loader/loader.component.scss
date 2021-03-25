@@ -1,0 +1,28 @@
+.loader {
+  width: 100vw;
+  height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__circle {
+    border-radius: 100%;
+    min-width: 10em;
+    min-height: 10em;
+
+    border: 3px solid var(--primary);
+    border-top-color: var(--primary-dark);
+
+    animation: loader 1s infinite;
+  }
+
+  @keyframes loader {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+}

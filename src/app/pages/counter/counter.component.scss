@@ -1,0 +1,85 @@
+$success: #28a745;
+$success-dark: #135823;
+
+$info: #17a2b8;
+$info-dark: #033d7a;
+
+$primary: #007bff;
+$primary-dark: #031d3a;
+
+
+.count {
+  width: 100vw;
+  height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  flex-direction: column;
+
+  &__title {
+    margin-bottom: 1em;
+  }
+
+  &__buttons {
+    width: 40%;
+
+    display: flex;
+    justify-content: space-between;
+
+    @media screen and (max-width: 728px) {
+      flex-direction: column;
+      gap: 10px;
+    }
+
+  }
+
+  &__button {
+    color: #fff;
+    border: none;
+    outline: none;
+
+    padding: 10px;
+    border-radius: 5px;
+
+    cursor: pointer;
+
+  }
+
+  &__button-success {
+    background-color: $success;
+
+    &:hover {
+      background-color: $success-dark;
+    }
+
+    &:active {
+      background-color: $success;
+    }
+  }
+
+  &__button-info {
+    background-color: $info;
+
+    &:hover {
+      background-color: $info-dark;
+    }
+
+    &:active {
+      background-color: $info;
+    }
+  }
+
+  &__button-primary {
+    background-color: $primary;
+
+    &:hover {
+      background-color: $primary-dark;
+    }
+
+    &:active {
+      background-color: $primary-dark;
+    }
+  }
+}

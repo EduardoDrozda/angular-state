@@ -1,0 +1,27 @@
+<div id="count" class="count">
+  <h1
+    id="title"
+    class="count__title"
+    >Current Count: {{ count }}</h1>
+
+  <div class="count__buttons">
+    <button
+      id="increment"
+      class="count__button count__button-success"
+      (click)="increment()"
+      >Increment</button>
+
+    <button
+      id="decrement"
+      class="count__button count__button-info"
+      (click)="decrement()"
+      >Decrement</button>
+
+    <button
+      id="reset"
+      class="count__button count__button-primary"
+      (click)="reset()"
+      >Reset Counter</button>
+  </div>
+
+</div>
